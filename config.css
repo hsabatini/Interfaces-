@@ -1,0 +1,48 @@
+* {
+
+}
+#curriculo{
+  width: 800px;
+  margin: 0px auto;
+  background-color: #0000;
+}
+
+.nome {
+  font-style: italic;
+  float: left;
+  font-family: 'Slabo 27px', serif;
+
+}
+
+.listaInfo {
+  float: right;
+  font-style: normal;
+  font-family: 'Slabo 27px', serif;
+
+}
+
+.limpar-float {
+  clear:both;
+
+}
+
+.objetivos {
+  font-style: normal;
+  float: right;
+  font-family: 'Nunito Sans', sans-serif;
+
+}
+
+.educacao{
+  font-style: normal;
+  font-family: 'Nunito Sans', sans-serif;
+
+}
+.experiencia{
+  font-style: normal;
+  font-family: 'Nunito Sans', sans-serif;
+}
+.atividades{
+  font-style: normal;
+  font-family: 'Nunito Sans', sans-serif;
+}
