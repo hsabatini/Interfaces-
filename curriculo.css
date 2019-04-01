@@ -1,0 +1,70 @@
+*{
+}
+#curriculo {
+  width:  1000px ;
+  margin: 0px  auto;
+  background-color: #00000;
+  border-style: solid;
+  font-size: 28px;
+  font-family: 'Roboto', sans-serif;
+
+}
+.nome {
+  padding-top: 15px;
+  float: left;
+  font-size: 35px;
+  padding: 15px;
+}
+.nome h1{
+  font-size: 50px;
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+.nome h2{
+  font-size: 50px;
+  margin-top: 0px;
+  margin-bottom: 25px;
+
+}
+
+.listaInfo {
+  float: right;
+  font-size: 18px;
+}
+.limpar-float {
+  clear: both;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+.objetivos {
+  padding: 13px;
+  float: right;
+  margin-bottom: 0;
+  margin-top: 0;
+  background-color:#81F7F3;
+}
+
+.educacao {
+  padding: 13px;
+  margin-bottom: 0;
+  margin-top: 0;
+  background-color:#81F7F3;
+}
+
+.experiencia {
+  padding: 13px;
+  margin-bottom: 0;
+  margin-top: 0;
+  background-color:#81F7F3;
+}
+
+.habilidades {
+  font-family: 'Roboto', sans-serif;
+
+}
+.atividades {
+  padding: 13px;
+  margin-bottom: 0;
+  margin-top: 0;
+  background-color:#81F7F3;
+}
