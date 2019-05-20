@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title> Introdução ao JQuery </title>
+
+    <!-- ANOTAÇÕES
+    O seletor poderá ser uma classe, um ID ou uma tag
+    -->
+
+    <!-- importação do CSS Boostrap -->
+    <link rel="stylesheet" href="../bootstrap/bootstrap.css">
+    <!-- Utilização do Javascript, jquery -->
+    <script src="jquery-3.4.1.js" charset="utf-8"></script>
+    <script>
+      // Aqui vai todo codigo JS
+      $(document).ready( function (){
+        $("#dadosP").hide();
+        $("#dadosC").hide();
+        $("#dadosA").hide();
+      });
+
+      $(document).ready( function (){
+        $("#btnDadosP").click(function(){
+          $("#dadosP").show('', function() {
+            $("#dadosC").hide();
+            $("#dadosA").hide();
+          });
+        });
+      } );
+
+      $(document).ready( function (){
+        $("#btnDadosC").click(function(){
+          $("#dadosC").show('', function() {
+            $("#dadosP").hide();
+            $("#dadosA").hide();
+          });
+        });
+      } );
+
+      $(document).ready( function (){
+        $("#btnDadosA").click(function(){
+          $("#dadosA").show('', function() {
+            $("#dadosP").hide();
+            $("#dadosC").hide();
+          });
+        });
+      } );
+
+      $(document).ready( function (){
+        $("#btnMostrarTudo").click(function(){
+          $("#dadosP").show('', function() {
+            $("#dadosC").show();
+            $("#dadosA").show();
+          });
+        });
+      } );
+
+      $(document).ready( function (){
+        $("#btnEsconderTudo").click(function(){
+          $("#dadosP").hide('', function() {
+            $("#dadosC").hide();
+            $("#dadosA").hide();
+          });
+        });
+      } );
+
+    </script>
+  </head>
+  <body>
+
+    <div class="container">
+      <br>
+      <h2> Eu </h2>
+      <br>
+      <!-- BOTÕES -->
+      <button
+        type="button"
+        class="btn btn-danger"
+        id="btnDadosP">
+        Mostrar Dados Pessoais
+      </button>
+
+      <button
+        type="button"
+        class="btn btn-dark"
+        id="btnDadosC">
+        Mostrar Dados de Contato
+      </button>
+
+      <button
+        type="button"
+        class="btn btn-success"
+        id="btnDadosA">
+        Mostrar Dados Acadêmicos
+      </button>
+
+      <button
+        type="button"
+        class="btn btn-warning"
+        id="btnMostrarTudo">
+        Mostrar Tudo
+      </button>
+
+      <button
+        type="button"
+        class="btn btn-primary"
+        id="btnEsconderTudo">
+        Esconder Tudo
+      </button>
+
+      <br></br>
+
+      <p id="dadosP"> Dados Pessoais</p>
+      <p id="dadosC"> Dados de Contato </p>
+      <p id="dadosA"> Dados Acadêmicos </p>
+
+    </div>
+  </body>
+</html>

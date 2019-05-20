@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title> Introdução ao JQuery </title>
+
+    <!-- ANOTAÇÕES
+    O seletor poderá ser uma classe, um ID ou uma tag
+    -->
+
+    <!-- importação do CSS Boostrap -->
+    <link rel="stylesheet" href="../bootstrap/bootstrap.css">
+    <!-- Utilização do Javascript, jquery -->
+    <script src="jquery-3.4.1.js" charset="utf-8"></script>
+    <script>
+      // Aqui vai todo codigo JS
+      $(document).ready( function (){
+        $("#btnEsconder").click(function(){
+          $("p").hide();
+        });
+      } );
+
+      $(document).ready( function (){
+        $("#btnEsconder1").click(function(){
+          $("#primeiro").hide('', function() {
+
+          });
+        });
+      } );
+
+      $(document).ready( function (){
+        $("#btnMostrar").click(function(){
+          $("p").show('', function() {
+            alert("Deu certo!");
+          });
+        });
+      } );
+
+    </script>
+  </head>
+  <body>
+
+    <div class="container">
+      <h2> Introdução ao JQuery </h2>
+      <p id="primeiro"> Vinicius Rangel e Heloisa Sabatini</p>
+      <p> VR</p>
+      <p> HS</p>
+
+      <!-- BOTÕES -->
+
+      <button
+        type="button"
+        class="btn btn-danger"
+        id="btnEsconder">
+        Esconder
+      </button>
+
+      <button
+        type="button"
+        class="btn btn-dark"
+        id="btnEsconder1">
+        Esconder o 1º
+      </button>
+
+      <button
+        type="button"
+        class="btn btn-success"
+        id="btnMostrar">
+        Mostrar
+      </button>
+
+    </div>
+  </body>
+</html>
